@@ -16,8 +16,6 @@ titles:
 key: page-about
 ---
 
-## About this blog
-
 Can artificial intelligence recapture what human is capable of, and beyond? As a neuroscientist who studies both biological and artificial intelligence, I think this is the most important question to ask. The recent advancement of deep learning offers such promise. Yet, I still firmly believe that deep learning has so much more to learn from biological intelligence, from properties of single neurons, to local neural network structures, to large-scale cross-regional connectivity. Thus, this blog is dedicated to my dual interests in artificial and biological intelligence.
 
 ## About Edward
