@@ -6,6 +6,10 @@ category: [review]
 mathjax: true
 ---
 
+We briefly review recent advancement in DeepFake research (e.g. face swapping).
+
+<!--more-->
+
 # DeepFake
 
 Reference: https://www.kdnuggets.com/2018/03/exploring-deepfakes.html/2
@@ -46,6 +50,9 @@ And some variants of the GAN structures
  <img src="/assets/images/GAN_structure.png">
 
 ## Implementation of Vanilla GAN using Keras
+
+[eriklindernoren/Keras-GAN](https://github.com/eriklindernoren/Keras-GAN/blob/master/gan/gan.py)
+
 Training on MNIST dataset
 
 
@@ -79,7 +86,7 @@ class GAN():
         # The valid takes generated images as input and determines validity
         valid = self.discriminator(img)
 
-<img src="/assets/    # The combined model  (stacked generator and discriminator) takes
+        # The combined model  (stacked generator and discriminator) takes
         # noise as input => generates images => determines validity
         self.combined = Model(z, valid)
         self.combined.compile(loss='binary_crossentropy', optimizer=optimizer)
@@ -316,9 +323,9 @@ $M_{i,b}, M_{j,b} \in \mathbb{R}^C$
 
 $c_b(x_i, x_j) = \exp(-\| M_{i,b} - M_{j,b}\|_{L1}) \in \mathbb{R}$
 
-$o(x_i)_b = \sum_\limits{j=1}^n c_b(x_i, x_j) \in \mathbb{R}$
+$o(x_i)\_b = \sum\_\limits{j=1}^n c_b(x_i, x_j) \in \mathbb{R}$
 
-$o(x_i) = [o(x_i)_1, o(x_i)_2, ..., o(x_i)_B] \in \mathbb{R}^B$
+$ o(x_i) = [o(x_i)_1, o(x_i)_2, ..., o(x_i)_B] \in \mathbb{R}^B $
 
 
 As a quote from the paper “Improved Techniques for Training GANs”
