@@ -10,6 +10,8 @@ mathjax: true
 
 The goal of this notebook is to review deep learning methods for object detection and image segmentation.
 
+<!--more-->
+
 # Performance Metrics
 
 Let's start with how the performance of image segmentation / object recognition is evaluated.
