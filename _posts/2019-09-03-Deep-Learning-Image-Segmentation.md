@@ -1,7 +1,7 @@
 ---
 title: Deep Learning Image Segmentation
 date: 2019-09-03
-tags: [CNN, R-CNN, Fast R-CNN, Faster R-CNN, Mask R-CNN Yolo, object detection]
+tags: [CNN, R-CNN, Fast R-CNN, Faster R-CNN, Mask R-CNN, object detection]
 category: [review]
 mathjax: true
 ---
@@ -600,11 +600,3 @@ Reference: https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-fo
 Reference: https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e
 
 <img src="/assets/images/compare_R-CNN.png">
-
-# Mask Scoring R-CNN
-
-# YOLO
-
-<img src="/assets/images/yolo.png">
-
-# U-Net
