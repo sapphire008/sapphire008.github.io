@@ -1,3 +1,10 @@
+---
+title: Deep Learning Image Segmentation
+date: 2019-09-03
+tags: [CNN, R-CNN, Fast R-CNN, Faster R-CNN, Mask R-CNN Yolo, object detection]
+category: [review]
+mathjax: true
+---
 
 # Overview
 
