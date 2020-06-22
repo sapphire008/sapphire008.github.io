@@ -9,6 +9,9 @@
 - update *CHANGELOG.md*
 - update version (*jekyll-text-theme.gemspec*, *package.json*, *_includes/scripts/variables.html*)
 
+## Adding new posts
+* Addding new posts in `_post` folder as a `.md` file
+
 ## Publishing
 
 - run `npm run gem-build` to build gem
