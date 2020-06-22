@@ -48,7 +48,7 @@ We can, in theory, fill all these missing values with zeros, and use `numpy.ndar
 ## `lil_matrix`
 ## `dia_matrix`
 
-## Construction of 7 sparse matrix and inter-convresion
+## Construction of 7 sparse matrix and inter-conversion
 | :    Easy Multiline   : |||
 | :----- | :----- | :------ |
 | Apple  | Banana | Orange  \
