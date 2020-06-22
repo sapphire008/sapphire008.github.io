@@ -231,12 +231,12 @@ plugins:
 jekyll-spaceship:
   processors:
     - table-processor
+    - element-processor
     #- mathjax-processor
     #- plantuml-processor
     #- polyfill-processor
     #- video-processor
     #- emoji-processor
-    - element-processor
   #mathjax-processor:
   #  src:  //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   #  config:
