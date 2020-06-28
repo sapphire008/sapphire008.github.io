@@ -42,7 +42,7 @@ A.indices = [1, 3, 2, 4, 0, 4, 4]
 A.indptr = [0, 1, 2, 4, 6, 7]
 ```
 
-![](../assets/images/csc_matrix_example.png)
+![](/assets/images/csc_matrix_example.png)
 
 * `data` is simply a column-wise flattened version of the matrix
 * `indices` is the row indices for the corresponding elements of the `data`, e.g., the first element in the data is a $1$, and it is located in the row index $1$ (second row); the second element in the data is a $2$, and the row index is $3$ (fourth row), etc...
@@ -70,7 +70,7 @@ where
 * `indices` are indices of the columns
 * `indptr` is a pointer for `data` and `indices`, an array of length row + 1, with max of its element as the length of the `data` or `indices`.
 
-![](../assets/images/csr_matrix_example.png)
+![](/assets/images/csr_matrix_example.png)
 
 ## Block Sparse Row matrix `bsr_matrix`
 
@@ -98,7 +98,7 @@ A.indices = [2, 0, 1]
 A.indptr = [0, 1, 2, 3]
 ```
 
-![](../assets/images/bsr_matrix_example.png)
+![](/assets/images/bsr_matrix_example.png)
 
 ## Coordinate Sparse Matrix `coo_matrix`
 
@@ -116,7 +116,7 @@ A.row =  [0, 1, 2, 3, 4, 4, 4]
 A.col =  [3, 0, 2, 1, 2, 3, 4]
 ```
 
-![](../assets/images/coo_matrix_example.png)
+![](/assets/images/coo_matrix_example.png)
 
 
 ## Dictionary of Keys Sparse Matrix `dok_matrix`
@@ -138,7 +138,7 @@ For the following matrix, the `dok_matrix`'s equivalent dict structure is
  (4, 4), 2}
 ```
 
-![](../assets/images/dok_matrix_example.png)
+![](/assets/images/dok_matrix_example.png)
 
 
 ## Row-based List of List Sparse Matrix `lil_matrix`
@@ -153,7 +153,7 @@ For the following example matrix, when converting to lil sparse matrix, the stru
 * `rows`: \[ [3], [0], [2], [1], [2,3,4] ]
 * `data`: \[ [2], [1], [1], [2], [2,1,2] ]
 
-![](../assets/images/lil_matrix_example.png)
+![](/assets/images/lil_matrix_example.png)
 
 `lil_matrix` offers a very simple and flexible interface to slice data. A key advantage of using lil format to slice the matrix is that it allows row and column indices to be broadcasted.
 
@@ -184,7 +184,7 @@ A.data = [[2, 2, 0, 0, 0],
 A.offsets = [-3, 0]
 ```
 
-![](../assets/images/dia_matrix_example.png)
+![](/assets/images/dia_matrix_example.png)
 
 
 ## Construction and Update of 7 Sparse Matrix Formats and Inter-conversion
