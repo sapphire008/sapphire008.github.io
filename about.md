@@ -24,4 +24,4 @@ Edward Cui is a computational and cognitive neuroscientist by training, an avid 
 
 ## Disclaimer
 
-All the images were obtained or modified from online sources, which I try my best to identify. Usage of these images are solely for the purpose of research and education.
+Some images were obtained or modified from online sources, which I try my best to identify. Usage of these images are solely for the purpose of research and education.
