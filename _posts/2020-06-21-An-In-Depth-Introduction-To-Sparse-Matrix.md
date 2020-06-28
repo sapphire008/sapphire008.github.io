@@ -188,15 +188,16 @@ A.offsets = [-3, 0]
 
 
 ## Construction and Update of 7 Sparse Matrix Formats and Inter-conversion
-| **Type**     | **From Dense Matrix**              | **Interconversion**        | **Empty Matrix**                              | **From Array & Row / Col Indices**                                 | **Format-Specific Construction / Updates**                                                                                                   |
-|--------------|------------------------------------|----------------------------|-----------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `csc_matrix` | `csc_matrix(D)`                    | `.tocsc()`                 | `csc_matrix((M,N), [dtype])`                  | `csc_matrix((data, (rows, cols)), [dtype])`                        | indices & indptr construction: `csc_matrix((data, indices, indptr), [shape=(M,N)]`                                                           |
-| `csr_matrix` | `csr_matrix(D)`                    | `.tocsr()`                 | `csr_matrix((M,N), [dtype])`                  | `csr_matrix((data, (rows, cols)), [dtype])`                        | indices & indptr construction: `csr_matrix((data, indices, indptr), [shape=(M,N)]`                                                           |
-| `bsr_matrix` | `bsr_matrix(D, [blocksize=(R,C)])` | `.tobsr([blocksize=(R,C))` | `bsr_matrix((M,N), [blocksize=(R,C), dtype])` | `bsr_matrix((data, (rows, cols)), [blocksize=(R,C), shape=(M,N)])` | indices & indptr construction: `bsr_matrix((data, indices, indptr), [shape=(M,N)]`                                                           |
-| `coo_matrix` | `coo_matrix(D)`                    | `.tocoo()`                 | `coo_matrix((M,N), [dtype])`                  | `coo_matrix((data, (rows, cols)), [shape=(M,N)])`                  | Add new data: `mat_coo.data = np.r_[mat_coo.data, data]`, `mat_coo.row = np.r_[mat_coo.row, rows]`, `mat_coo.col = np.r_[mat_coo.col, cols]` |
-| `dok_matrix` | `dok_matrix(D)`                    | `.todok()`                 | `dok_matrix((M,N), [dtype])`                  | N/A                                                                | row & col update: `dict.update(mat_dok, zip(zip(rows, cols), data))`                                                                         |
-| `lil_matrix` | `lil_matrix(D)`                    | `.tolil()`                 | `lil_matrix((M,N), [dtype])`                  | N/A                                                                | row & col update: `mat_lil[rows, cols] = data`                                                                                               |
-| `dia_matrix` | `dia_matrix(D)`                    | `.todia()`                 | `dia_matrix((M,N), [dtype])`                  | `dia_matrix((data, offsets), shape=(M,N))`                         | `mat_dia.setdiag(data, offset)`                                                                                                              |                                                |
+
+| **Type** | **From Dense Matrix** | **Interconversion** | **Empty Matrix** | **From Array & Row / Col Indices** | **Format-Specific Construction / Updates** |
+|-|-|-|-|-|-|
+| `csc_matrix` | `csc_matrix(D)` | `.tocsc()` | `csc_matrix((M,N), [dtype])` | `csc_matrix((data, (rows, cols)), [dtype])` | indices & indptr construction: `csc_matrix((data, indices, indptr), [shape=(M,N)]` |
+| `csr_matrix` | `csr_matrix(D)` | `.tocsr()` | `csr_matrix((M,N), [dtype])` | `csr_matrix((data, (rows, cols)), [dtype])` | indices & indptr construction: `csr_matrix((data, indices, indptr), [shape=(M,N)]` |
+| `bsr_matrix` | `bsr_matrix(D, [blocksize=(R,C)])` | `.tobsr([blocksize=(R,C))` | `bsr_matrix((M,N), [blocksize=(R,C), dtype])` | `bsr_matrix((data, (rows, cols)), [blocksize=(R,C), shape=(M,N)])` | indices & indptr construction: `bsr_matrix((data, indices, indptr), [shape=(M,N)]` |
+| `coo_matrix` | `coo_matrix(D)` | `.tocoo()` | `coo_matrix((M,N), [dtype])` | `coo_matrix((data, (rows, cols)), [shape=(M,N)])` | Add new data: `mat_coo.data = np.r_[mat_coo.data, data]`, `mat_coo.row = np.r_[mat_coo.row, rows]`, `mat_coo.col = np.r_[mat_coo.col, cols]` |
+| `dok_matrix` | `dok_matrix(D)` | `.todok()` | `dok_matrix((M,N), [dtype])` | N/A | row & col update: `dict.update(mat_dok, zip(zip(rows, cols), data))` |
+| `lil_matrix` | `lil_matrix(D)` | `.tolil()` | `lil_matrix((M,N), [dtype])` | N/A | row & col update: `mat_lil[rows, cols] = data` |
+| `dia_matrix` | `dia_matrix(D)` | `.todia()` | `dia_matrix((M,N), [dtype])` | `dia_matrix((data, offsets), shape=(M,N))` | `mat_dia.setdiag(data, offset)` |
 
 ## Comparison of all 7 sparse matrix data structures in a table
 
