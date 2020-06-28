@@ -1,4 +1,4 @@
-implements---
+---
 title: An In-Depth Introduction to Sparse Matrix
 date: 2020-06-21
 tags: [Python, scipy, sparse matrix, recommender system, big data, machine learnings]
