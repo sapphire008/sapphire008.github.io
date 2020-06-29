@@ -1,5 +1,7 @@
 # HOW TO RELEASE
 
+https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start
+
 ## Preparation
 
 - diff configs (*_config.yml*, *docs/_config.yml*, *docs/_config.dev.yml*, *test/_config.yml*)
